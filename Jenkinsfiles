@@ -3,13 +3,13 @@ pipeline {
 
     environment {
         SONARQUBE_SERVER = 'SonarQubeServer'  // The name of the SonarQube server configured in Jenkins
-        SONAR_TOKEN = 'sqa_54c4ceb0ea69276981c844021664899db708e60d' // Store the token securely
+        SONAR_TOKEN = 'squ_930fdc2b5a80652aa1ae3ed1a6a06afe1ff41742' // Store the token securely
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/ADirin/sep2_week5_inclass_s2.git'
+                git branch: 'main', url: 'https://github.com/vevego/OTP2_week5_inclass.git'
             }
         }
 
